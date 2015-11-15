@@ -26,19 +26,6 @@ var Test = React.createClass({
           javaScriptEnabledAndroid={true}
           scalesPageToFit={false}
         />
-        // <Text style={styles.welcome}>
-        //   Welcome to React Native!
-        // </Text>
-        // <Text>
-        //   Really?
-        // </Text>
-        // <Text style={styles.instructions}>
-        //   To get started,  DO NOTEWFAW EFWEF edit index.ios.js
-        // </Text>
-        // <Text style={styles.instructions}>
-        //   Press Cmd+R to reload,{'\n'}
-        //   Cmd+D or shake for dev menu
-        // </Text>
       </View>
     );
   }
@@ -47,9 +34,11 @@ var Test = React.createClass({
 var styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     // justifyContent: 'center',
     // alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    overflow: 'hidden',
   },
   welcome: {
     fontSize: 20,
@@ -63,8 +52,6 @@ var styles = StyleSheet.create({
     marginBottom: 5,
   },
   webView: {
-    flex: 1,
-    height: 300
   }
 });
 
